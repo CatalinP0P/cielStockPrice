@@ -43,7 +43,7 @@ app.post('/updateStockAndPrice', async (req, res) => {
       currentMerchant.merchantApiSecret,
     )
 
-    for (let x = 0; x < 10; x++) {
+    for (let x = 0; x < products.length; x++) {
       await wait(1000)
       let product = products[x]
       productCount += 1
